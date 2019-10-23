@@ -1,4 +1,4 @@
-![](Drum%20Kit/assets/drumkit.png) 
+![](assets/drumkit.png) 
 # JavaScript Drum Kit
 
 ![](https://forthebadge.com/images/badges/designed-in-ms-paint.svg)
@@ -11,11 +11,11 @@ Alternatively, the buttons can be clicked instead rather than using a keyboard.
 ### Screenshots
 ---
 > **The default look**
-![Static Page](Drum%20Kit/assets/1.png)
+![Static Page](assets/1.png)
 
 > **Button / key interaction via mouse**
-![Mouse Interaction](Drum%20Kit/assets/2.png)
+![Mouse Interaction](assets/2.png)
 
 ### Demo
 ---
-![Drums in action!](Drum%20Kit/assets/demo.gif)
+![Drums in action!](assets/demo.gif)
