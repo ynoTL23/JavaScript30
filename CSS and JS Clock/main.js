@@ -20,6 +20,10 @@ function setDate() {
     minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
+    // Log every 5 minutes
+    if ((minutes % 5 == 0) && (seconds == 0)) {
+        logDate(hours, minutes, seconds);
+    }
 }
 
 // prevent snapping of hands when seconds reaches 60/0
@@ -30,6 +34,15 @@ function checkIfSecondsResets(seconds) {
     } else {
         hands.forEach(hand => hand.style.transitionDuration = '0.05s');
     }
+}
+
+// console log the date
+function logDate(hours, minutes, seconds) {
+        // convert hours to 12-hr format
+        var ampm = hours >= 12 ? 'PM' : 'AM'; // set AM or PM
+        hours = hours % 12; // convert to 12 hr format
+        hours = hours ? hours : 12; // 'zero' o' clock should be '12'
+        console.log("Logged > " + (('0' + hours).slice(-2)) + ":" + (('0' + minutes).slice(-2)) + ":" + (('0' + seconds).slice(-2)), ampm);
 }
 
 setInterval(setDate, 1000);
