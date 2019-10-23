@@ -49,3 +49,14 @@ body {
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.5, 0.5, 1);
 }
+
+.second-hand {
+    left: 25%;
+    width: 25%;
+    background: red;
+}
+
+.hour-hand {
+    left: 15%;
+    width: 35%;
+}
