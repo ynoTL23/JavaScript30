@@ -11,29 +11,40 @@ body, html {
 }
 
 .keys {
-    /* flex: 1; */
+    flex: 1;
     display: flex;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .key {
-    border: .4rem solid #011627;
-    border-radius: .5rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
-    transition: all 0.1s ease;
-    width: 10rem;
     text-align: center;
-    color: #fdfffc;
-    /* background: rgba(0, 0, 0, 0.4); */
+    width: 10rem;
+    margin: 1rem;
     background: rgba(231, 29, 54, 0.4);
+    transition: all 0.1s ease;
+    border: .4rem solid #011627;
+    border-radius: 2rem;
+    padding: 1rem .5rem;
+    font-size: 1.5rem;
+    color: #fdfffc;
     text-shadow: 0 0 .5rem #011627;
+    cursor: pointer;
 }
 
-.playing {
+.key:hover {
+    transform: scale(1.25);
+    border-color: #ff9f1c;
+    box-shadow: 0 0 1rem #ff9f1c;
+}
+
+.key:active {
+    transform: scale(0.90);
+}
+
+.key.playing {
     transform: scale(1.25);
     border-color: #ff9f1c;
     box-shadow: 0 0 1rem #ff9f1c;
