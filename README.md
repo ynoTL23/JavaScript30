@@ -5,3 +5,6 @@
 ---
 ## Day 1: Drum Kit
 A virtual drum kit that plays notes based on user input. A row of keys is displayed to interact with. Each key is mapped to a sound that will play when the corresponding key is pressed or is clicked by mouse.
+
+## Day 2: CSS and JS Clock
+Simple webpage that displays a functioning analog clock as well as the same clock in digital format.
