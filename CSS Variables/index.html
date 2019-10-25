@@ -16,13 +16,27 @@
 
         <label for="blur">Blur:</label>
         <input id="blur" type="range" name="blur" min="0" max="20" value="5" data-sizing="px">
-
+        
         <label for="base">Base Color</label>
         <input id="base" type="color" name="base" value="#00aeef">
     </div>
 
-    <img src="https://picsum.photos/500">
+    <!-- Request random image of size 500x500 -->
+    <img src="https://picsum.photos/500"> 
 
 </body>
+
+<script>
+    const inputs = document.querySelectorAll('.controls input'); // select all inputs on page
+
+    function handleUpdate() {
+        const suffix = this.dataset.sizing || ''; // need to append var's 'unit of measure'
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix); // update the css property
+    }
+
+    // listen for events
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+</script>
 
 </html>
