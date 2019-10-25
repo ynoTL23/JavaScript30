@@ -8,3 +8,6 @@ A virtual drum kit that plays notes based on user input. A row of keys is displa
 
 ## Day 2: CSS and JS Clock
 Simple webpage that displays a functioning analog clock as well as the same clock in digital format.
+
+## Day 3: CSS Variables
+A random image is rendered on screen with some control inputs. The user can interact with said inputs to alter the image. Alterations include blur, color, rotate, skew and spacing.
