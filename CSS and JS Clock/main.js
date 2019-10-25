@@ -1,4 +1,3 @@
-
 function setDate() {
     const now = new Date();
 
@@ -20,9 +19,11 @@ function setDate() {
     minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
-    // Log every 5 minutes
+    document.getElementById('digital').textContent = getDigital(hours, minutes, seconds);
+    
+    // Log time every 5 minutes
     if ((minutes % 5 == 0) && (seconds == 0)) {
-        logDate(hours, minutes, seconds);
+        console.log("Logged > " + getDigital(hours, minutes, seconds));
     }
 }
 
@@ -36,13 +37,14 @@ function checkIfSecondsResets(seconds) {
     }
 }
 
-// console log the date
-function logDate(hours, minutes, seconds) {
+// return digital format of time
+function getDigital(hours, minutes, seconds) {
         // convert hours to 12-hr format
         var ampm = hours >= 12 ? 'PM' : 'AM'; // set AM or PM
         hours = hours % 12; // convert to 12 hr format
         hours = hours ? hours : 12; // 'zero' o' clock should be '12'
-        console.log("Logged > " + (('0' + hours).slice(-2)) + ":" + (('0' + minutes).slice(-2)) + ":" + (('0' + seconds).slice(-2)), ampm);
+        var time = ((('0' + hours).slice(-2)) + ":" + (('0' + minutes).slice(-2)) + ":" + (('0' + seconds).slice(-2)) + " " + ampm);
+        return time;
 }
 
 setInterval(setDate, 1000);
