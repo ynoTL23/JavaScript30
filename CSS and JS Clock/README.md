@@ -1,4 +1,4 @@
-![](https://i.ytimg.com/vi/xu87YWbr4X0/maxresdefault.jpg) 
+![](assets/banner.png) 
 # CSS and JavaScript Clock
 
 #### Analog clock designed in CSS and functionalities written in JavaScript.
