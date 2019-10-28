@@ -1,8 +1,3 @@
-// Get your shorts on - this is an array workout!
-// ## Array Cardio Day 1
-
-// Some data we can work with
-
 const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
     { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
@@ -23,16 +18,19 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
 const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));
+console.warn("Filter inventors born in 1500s using .filter()");
 console.table(fifteen);
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
 const full_names = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+console.warn("Return inventors' full names with .map()");
 console.log(full_names);
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 const ordered = inventors.sort((a, b) => a.year > b.year ? 1: -1);
+console.warn("Sort the inventors from oldest to youngest with .sort()");
 console.table(ordered);
 
 // Array.prototype.reduce()
@@ -40,6 +38,7 @@ console.table(ordered);
 const totalYears = inventors.reduce((total, inventor) => {
     return total + (inventor.passed - inventor.year);
 }, 0);
+console.warn("Find the total years lived by all inventors with .reduce()");
 console.log(totalYears);
 
 // 5. Sort the inventors by years lived
@@ -48,6 +47,7 @@ const oldest = inventors.sort(function(a, b) {
     const nextGuy = b.passed - b.year;
     return lastGuy > nextGuy ? -1 : 1;
 });
+console.warn("Sort inventors by the amount of years they lived with .sort()");
 console.table(oldest);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -57,6 +57,8 @@ console.table(oldest);
 // const de = links
 //                 .map(link => link.textContent)
 //                 .filter(streeName => streeName.includes('de'));
+// console.log("Find Boulevards in Paris that contain 'de' in its name");
+// console.log(de);
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
@@ -65,6 +67,7 @@ const alpha = people.sort((lastOne, nextOne) => {
     const [blast, bfirst] = nextOne.split(', ');
     return alast > blast ? 1 : -1;
 });
+console.warn("Sort people alphabetically by their last name using .sort()");
 console.log(alpha);
 
 // 8. Reduce Exercise
@@ -77,4 +80,5 @@ const transportation = data.reduce(function(obj, item) {
     obj[item]++;
     return obj;
 }, {});
+console.warn("Find sum of each instance in an array using .reduce()");
 console.log(transportation);
