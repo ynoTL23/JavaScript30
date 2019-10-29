@@ -1,15 +1,18 @@
-<p align="center"><img src='https://via.placeholder.com/1188x449.png?text=Array+Cardio+Day+1' align="center" width="75%" /></p>
+<p align="center"><img src='assets/banner.png' align="center" width="75%" /></p>
+
 # Array Cardio 1
 
 #### Exploring JavaScript's prominent array functions.
 
 This exercise explores the most prominent functions that are found in JavaScript.
 
+<p align="center"><a href="https://github.com/ynoTL23/JavaScript30">Main repo</a></p>
+
 ### Screenshot
 ---
 > **The default look**
-![Static Page](https://via.placeholder.com/1280x720.png/0000FF/808080?text=The+Default+Look)
+![Static Page](assets/1.png)
 
 ### Demo
 ---
-![](https://via.placeholder.com/1280x720.gif/FFFF00/000000?text=See+It+In+Action!)
+![](assets/demo.gif)
