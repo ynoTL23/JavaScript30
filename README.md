@@ -11,3 +11,9 @@ Simple webpage that displays a functioning analog clock as well as the same cloc
 
 ## Day 3: CSS Variables
 A random image is rendered on screen with some control inputs. The user can interact with said inputs to alter the image. Alterations include blur, color, rotate, skew and spacing.
+
+## Day 4: Array Cardio 1
+Quick array exercises to explore JavaScript's prominent functions: `.filter(), map(), reduce(), sort()`
+
+## Day 5: Flex Box Gallery
+Explore the capabilities of CSS's *flexible boxes*, or `flex box`, and bringing in interactivity with JavaScript.
