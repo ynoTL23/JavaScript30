@@ -17,3 +17,6 @@ Quick array exercises to explore JavaScript's prominent functions: `.filter(), m
 
 ## Day 5: [Flexbox Gallery](https://github.com/ynoTL23/JavaScript30/tree/master/Flex%20Box%20Gallery)
 Explore the capabilities of CSS's *flexible boxes*, or `flexbox`, and bringing in interactivity with JavaScript.
+
+## Day 6: [Countdown Timer](https://github.com/ynoTL23/JavaScript30/tree/master/Countdown%20Timer)
+A countdown timer made with JavaScript. Offers preset timers or a custom user specified timer.
