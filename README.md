@@ -15,5 +15,5 @@ A random image is rendered on screen with some control inputs. The user can inte
 ## Day 4: [Array Cardio 1](https://github.com/ynoTL23/JavaScript30/tree/master/Array%20Cardio%201)
 Quick array exercises to explore JavaScript's prominent functions: `.filter(), map(), reduce(), sort()`
 
-## Day 5: [Flex Box Gallery](https://github.com/ynoTL23/JavaScript30/tree/master/Flex%20Box%20Gallery)
+## Day 5: [Flexbox Gallery](https://github.com/ynoTL23/JavaScript30/tree/master/Flex%20Box%20Gallery)
 Explore the capabilities of CSS's *flexible boxes*, or `flex box`, and bringing in interactivity with JavaScript.

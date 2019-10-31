@@ -1,8 +1,8 @@
 <p align="center"><img src='assets/banner.png' align="center" width="75%" /></p>
 
-# Flex Box Gallery
+# Flexbox Gallery
 
-### This challenge explores the capabilities of CSS's flexible boxes, or flex box. JavaScript is then used to bring interactivity.
+### This challenge explores the capabilities of CSS's flexible boxes, or flexbox. JavaScript is then used to bring interactivity.
 
 Various panels are placed side by side using flexbox and its properties. When clicked, the panels will expand and text will come into view.
 
