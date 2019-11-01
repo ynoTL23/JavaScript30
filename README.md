@@ -20,3 +20,6 @@ Explore the capabilities of CSS's *flexible boxes*, or `flexbox`, and bringing i
 
 ## Day 6: [Countdown Timer](https://github.com/ynoTL23/JavaScript30/tree/master/Countdown%20Timer)
 A countdown timer made with JavaScript. Offers preset timers or a custom user specified timer.
+
+## Day 7: [Whack A Mole](https://github.com/ynoTL23/JavaScript30/tree/master/Whack%20A%20Mole)
+A small Whack A Mole game with the same objective as always: hit the moles as fast as you can. All under 10 seconds.
