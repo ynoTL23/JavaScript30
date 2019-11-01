@@ -3,6 +3,7 @@ const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
 let lastHole;
 let timeUp = false;
+let score = 0;
 
 // generate random time from min to max, in milliseconds
 function randomTime(min, max) {
@@ -36,6 +37,7 @@ function peep() {
 function startGame() {
     scoreBoard.textContent = 0;
     timeUp = false;
+    score = 0;
     peep();
     setTimeout(() => {
         timeUp = true;
@@ -43,4 +45,12 @@ function startGame() {
     }, 10000);
 }
 
-startGame();
+function bonk(e) {
+    if (!e.isTrusted) return; // click is faked. Dev console???
+    score++;
+    this.classList.remove('up');
+    scoreBoard.textContent = score;
+    console.log(`[${score}] | You got a mole! Score increased.`);
+}
+
+moles.forEach(mole => mole.addEventListener('click', bonk));
