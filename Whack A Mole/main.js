@@ -42,6 +42,7 @@ function startGame() {
     setTimeout(() => {
         timeUp = true;
         console.log("10 seconds have elapsed. Game over.");
+        alert(`Game over! Your score was ${score}`);
     }, 10000);
 }
 
