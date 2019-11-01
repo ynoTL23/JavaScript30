@@ -2,6 +2,7 @@ const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
 let lastHole;
+let timeUp = false;
 
 // generate random time from min to max, in milliseconds
 function randomTime(min, max) {
@@ -28,8 +29,18 @@ function peep() {
     hole.classList.add('up'); // mole comes up
     setTimeout(() => {
         hole.classList.remove('up'); // mole goes down after 'time' milliseconds
-        peep();
+        if (!timeUp) peep();
     }, time)
 }
 
-peep();
+function startGame() {
+    scoreBoard.textContent = 0;
+    timeUp = false;
+    peep();
+    setTimeout(() => {
+        timeUp = true;
+        console.log("10 seconds have elapsed. Game over.");
+    }, 10000);
+}
+
+startGame();
